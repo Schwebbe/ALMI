@@ -8,6 +8,17 @@ $(document).ready(function() {
         $('.progress-bar').css('width', emptyValue + '%').attr('aria-valuenow', emptyValue);
     });
 
+    /*Ändrar färg på knappar när checkbox är toggled*/
+    
+    $('input#toggle').change(function(){
+    if($('input#toggle:checked').length>0) {
+    	$('#buttonOne').addClass('highlight'); 
+    }
+    else {
+    	$('#buttonOne').removeClass('highlight');
+    }
+});
+    
     $("#buttonOne").click(function() {
         $("#textOne").show();
         $("#textTwo").hide();
@@ -178,3 +189,5 @@ $(document).ready(function() {
         })
     });
 });
+
+
