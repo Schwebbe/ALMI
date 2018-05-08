@@ -1,0 +1,66 @@
+@font-face {
+    font-family:"Quicksand-Bold";
+    src: url("../Quicksand-Bold.otf") format("truetype");
+}
+
+body {
+    background-color: #fafafa;
+    font-family: "Quicksand-Bold";
+    width: 100%;
+    color: #4c4c4c;
+}
+
+.logo {
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.progress {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: #26cc60;
+}
+
+.level-btn {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 100px;
+    background-color: #4c4c4c;
+    color: #fff;
+}
+
+.text-box {
+    background-color: #fff;
+    border: 0.5px solid;
+    border-color: #cacaca;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-bottom: 50px;
+}
+
+.text {
+    padding: 10px;
+}
+
+.footer {
+    background-color: #4c4c4c;
+}
+
+.footer-text {
+    color: #fff;
+    padding: 40px;
+    margin: 0;
+}
