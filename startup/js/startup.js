@@ -19,6 +19,10 @@ $(document).ready(function() {
         $("#textEight").hide();
         $("#textNine").hide();
         $("#textTen").hide();
+        
+        $("#textOne").each(function () {
+            $(this).addClass("animated bounceInLeft");
+        })
     });
 
     $("#buttonTwo").click(function() {
@@ -32,6 +36,10 @@ $(document).ready(function() {
         $("#textEight").hide();
         $("#textNine").hide();
         $("#textTen").hide();
+        
+        $("#textTwo").each(function () {
+            $(this).addClass("animated bounceInLeft");
+        })
     });
 
     $("#buttonThree").click(function() {
@@ -45,6 +53,10 @@ $(document).ready(function() {
         $("#textEight").hide();
         $("#textNine").hide();
         $("#textTen").hide();
+        
+        $("#textThree").each(function () {
+            $(this).addClass("animated bounceInLeft");
+        })
     });
 
     $("#buttonFour").click(function() {
@@ -58,6 +70,10 @@ $(document).ready(function() {
         $("#textEight").hide();
         $("#textNine").hide();
         $("#textTen").hide();
+        
+        $("#textFour").each(function () {
+            $(this).addClass("animated bounceInLeft");
+        })
     });
 
     $("#buttonFive").click(function() {
@@ -71,6 +87,10 @@ $(document).ready(function() {
         $("#textEight").hide();
         $("#textNine").hide();
         $("#textTen").hide();
+        
+        $("#textFive").each(function () {
+            $(this).addClass("animated bounceInLeft");
+        })
     });
 
     $("#buttonSix").click(function() {
@@ -84,6 +104,10 @@ $(document).ready(function() {
         $("#textEight").hide();
         $("#textNine").hide();
         $("#textTen").hide();
+        
+        $("#textSix").each(function () {
+            $(this).addClass("animated bounceInLeft");
+        })
     });
 
     $("#buttonSeven").click(function() {
@@ -97,6 +121,10 @@ $(document).ready(function() {
         $("#textEight").hide();
         $("#textNine").hide();
         $("#textTen").hide();
+        
+        $("#textSeven").each(function () {
+            $(this).addClass("animated bounceInLeft");
+        })
     });
 
     $("#buttonEight").click(function() {
@@ -110,6 +138,10 @@ $(document).ready(function() {
         $("#textEight").show();
         $("#textNine").hide();
         $("#textTen").hide();
+        
+        $("#textEight").each(function () {
+            $(this).addClass("animated bounceInLeft");
+        })
     });
 
     $("#buttonNine").click(function() {
@@ -123,6 +155,10 @@ $(document).ready(function() {
         $("#textEight").hide();
         $("#textNine").show();
         $("#textTen").hide();
+        
+        $("#textNine").each(function () {
+            $(this).addClass("animated bounceInLeft");
+        })
     });
 
     $("#buttonTen").click(function() {
@@ -136,5 +172,9 @@ $(document).ready(function() {
         $("#textEight").hide();
         $("#textNine").hide();
         $("#textTen").show();
+        
+        $("#textTen").each(function () {
+            $(this).addClass("animated bounceInLeft");
+        })
     });
 });
