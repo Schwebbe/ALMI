@@ -42,8 +42,9 @@ body {
     margin-bottom: 20px;
     border: none;
     border-radius: 100px;
-    background-color: #4c4c4c;
+    background-color: #0b787f;
     color: #fff;
+    cursor: pointer;
 }
 
 .text-box {
