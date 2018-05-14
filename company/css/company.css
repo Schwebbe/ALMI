@@ -276,6 +276,9 @@ body {
 }
 .footer {
     background-color: #4c4c4c;
+    position: fixed;
+    width: 100vw;
+    bottom: 0 !important;
 }
 
 .footer-text {
@@ -296,12 +299,7 @@ body {
 
 
 .modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
+
 }
 .modal-dialog {
     position: fixed;
@@ -311,10 +309,13 @@ body {
     padding: 0;
 }
 .modal-content {
+    margin-top: 5vw;
+    margin-left: 15vw !important;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    width: 70vw;
     border-radius: 0;
     box-shadow: none;
     background: -moz-linear-gradient(259deg, rgba(153,218,255,1) 0%, rgba(12,191,194,1)); /* ff3.6+ */
@@ -435,7 +436,7 @@ body {
 }
 
 .modal .modal-content {
-    min-height: 100vh;
+    min-height: 60vh;
 }
 
 
@@ -490,6 +491,9 @@ body {
 /* MOBILE STYLING */
 
 @media only screen and (max-width: 500px) {
+    .modal .modal-content {
+        min-height: 100vh;
+    }
     .navbar-side {
         width: 100%;
     }
@@ -503,6 +507,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    .modal .modal-content {
+        min-height: 100vh;
+        margin: 0;
+    }
     .navbar-side {
         width: 50%;
     }
@@ -515,6 +523,10 @@ body {
     }
 }
 @media only screen and (max-width: 1366px) {
+    .modal .modal-content {
+        margin-top: 60px;
+        min-height: 60vh;
+    }
     .navbar-side {
         width: 50%;
     }
@@ -537,12 +549,20 @@ body {
     .navbar-toggle {
         padding: 20px 20px;
     }
+    .modal .modal-content {
+        min-height: 100vh;
+        margin: 0 !important;
+    }
 }
 @media only screen and (max-width: 600px) {
     .no-csstransforms li {
         width: 4em;
         height: 4em;
         line-height: 4em;
+    }
+    .modal .modal-content {
+        min-height: 100vh;
+        margin: 0 !important;
     }
     .mobile {
         max-width: 60% !important;
@@ -559,6 +579,10 @@ body {
         height: 4em;
         line-height: 4em;
     }
+    .modal .modal-content {
+        min-height: 100vh;
+        margin: 0 !important;
+    }
     .font-mobile-h1 {
         font-size: 25px;
     }
@@ -570,6 +594,10 @@ body {
     }
     .cn-button {
         font-size: 1em;
+    }
+    .modal .modal-content {
+        min-height: 100vh;
+        margin: 0;
     }
 }
 

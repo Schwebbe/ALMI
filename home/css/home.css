@@ -45,7 +45,10 @@ h2 {
 
 .footer {
     background-color: #4c4c4c;
-    margin-top: 195px;
+    position: absolute;
+    width: 100vw;
+    bottom: 0 !important;
+    
 }
 
 .footer-text {
