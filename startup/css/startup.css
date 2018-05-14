@@ -67,10 +67,13 @@ body {
 }
 
 .footer {
-    background-color: #4c4c4c;
     position: absolute;
-    width: 100vw;
-    bottom: 0 !important;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
 }
 
 .footer-text {
