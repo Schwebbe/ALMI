@@ -1,100 +1,55 @@
+@font-face {
+    font-family:"Quicksand-Bold";
+    src: url("../Quicksand-Bold.otf") format("truetype");
+}
 
 body{
-  background: -moz-linear-gradient(90deg, rgba(153,218,255,1) 0%, rgba(12,191,194,1) 100%); /* ff3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(12,191,194,1)), color-stop(100%, rgba(153,218,255,1))); /* safari4+,chrome */
-      background: -webkit-linear-gradient(90deg, rgba(153,218,255,1) 0%, rgba(12,191,194,1) 100%); /* safari5.1+,chrome10+ */
-      background: -o-linear-gradient(90deg, rgba(153,218,255,1) 0%, rgba(12,191,194,1) 100%); /* opera 11.10+ */
-      background: -ms-linear-gradient(90deg, rgba(153,218,255,1) 0%, rgba(12,191,194,1) 100%); /* ie10+ */
-      background: linear-gradient(0deg, rgba(153,218,255,1) 0%, rgba(12,191,194,1) 100%);
+    background: -moz-linear-gradient(90deg, rgba(153,218,255,1) 0%, rgba(12,191,194,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(12,191,194,1)), color-stop(100%, rgba(153,218,255,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, rgba(153,218,255,1) 0%, rgba(12,191,194,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, rgba(153,218,255,1) 0%, rgba(12,191,194,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, rgba(153,218,255,1) 0%, rgba(12,191,194,1) 100%); /* ie10+ */
+    background: linear-gradient(0deg, rgba(153,218,255,1) 0%, rgba(12,191,194,1) 100%);
 
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+
+    font-family:"Quicksand-Bold";
 }
 
-footer{
-  position: absolute;
-  bottom: 0px;
-  color: #fff;
-  text-shadow: 1px 1px 4px #222;
+h2 {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #fff;
 }
-
-h2{
-  font-size: 18px;
-  text-shadow: 1px 1px 4px #222;
-  color: #fff;
-}
-
-
-
-
 
 #almiLogo{width: 600px; height: auto; margin-top: 15%;}
 .StartButtonDiv{margin-top: 5%;}
 
 .startbuttons {
-  background: #48ade8;
-  background-image: -webkit-linear-gradient(top, #48ade8, #195273);
-  background-image: -moz-linear-gradient(top, #48ade8, #195273);
-  background-image: -ms-linear-gradient(top, #48ade8, #195273);
-  background-image: -o-linear-gradient(top, #48ade8, #195273);
-  background-image: linear-gradient(to bottom, #48ade8, #195273);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  margin: 5px;
-  border: 0px;
-  cursor: pointer;
-  width: 230px;
-}
-
-.startbuttons:hover {
-  background: #b5e4ff;
-    background-image: -webkit-linear-gradient(top, #b5e4ff, #0f4b73);
-    background-image: -moz-linear-gradient(top, #b5e4ff, #0f4b73);
-    background-image: -ms-linear-gradient(top, #b5e4ff, #0f4b73);
-    background-image: -o-linear-gradient(top, #b5e4ff, #0f4b73);
-    background-image: linear-gradient(to bottom, #b5e4ff, #0f4b73);
-    text-decoration: none;
-}
-
-
-@media only screen and (max-width: 1100px) {
-
-  #almiLogo{width: 300px; margin-top: 30%;}
-  .StartButtonDiv{margin-top: 10%;}
-  .startbuttons{
-    background: #00378f;
-    background-image: -webkit-linear-gradient(top, #00378f, #55befa);
-    background-image: -moz-linear-gradient(top, #00378f, #55befa);
-    background-image: -ms-linear-gradient(top, #00378f, #55befa);
-    background-image: -o-linear-gradient(top, #00378f, #55befa);
-    background-image: linear-gradient(to bottom, #00378f, #55befa);
+    background-color: #07939c;
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
-    border: 0px;
-    text-shadow: 1px 1px 8px #666666;
-    color: #ffffff;
+    color: #fff;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
+    text-decoration: none;
     margin: 5px;
-    text-decoration: none;
+    border: 0px;
     cursor: pointer;
-  }
+    width: 230px;
+}
 
-  .startbuttons:hover {
-    background: #0554e8;
-    background-image: -webkit-linear-gradient(top, #0554e8, #b1ddfa);
-    background-image: -moz-linear-gradient(top, #0554e8, #b1ddfa);
-    background-image: -ms-linear-gradient(top, #0554e8, #b1ddfa);
-    background-image: -o-linear-gradient(top, #0554e8, #b1ddfa);
-    background-image: linear-gradient(to bottom, #0554e8, #b1ddfa);
-    text-decoration: none;
-  }
+
+.footer {
+    background-color: #4c4c4c;
+    margin-top: 195px;
+}
+
+.footer-text {
+    color: #fff;
+    padding: 40px;
+    margin: 0;
 }
