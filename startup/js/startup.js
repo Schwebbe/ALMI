@@ -60,6 +60,62 @@ $(document).ready(function() {
             $('#buttonFive').removeClass('highlight');
         }
     });
+    
+    $('input#toggle6').change(function(){
+        if($('input#toggle:checked').length>0) {
+            $('#buttonSix').removeClass('current'); 
+            $('#buttonSix').addClass('highlight'); 
+            $('#buttonSeven').addClass('current'); 
+        }
+        else {
+            $('#buttonSix').removeClass('highlight');
+        }
+    });
+    
+    $('input#toggle7').change(function(){
+        if($('input#toggle:checked').length>0) {
+            $('#buttonSeven').removeClass('current'); 
+            $('#buttonSeven').addClass('highlight'); 
+            $('#buttonEight').addClass('current'); 
+        }
+        else {
+            $('#buttonSeven').removeClass('highlight');
+        }
+    });
+    
+    $('input#toggle8').change(function(){
+        if($('input#toggle:checked').length>0) {
+            $('#buttonEight').removeClass('current'); 
+            $('#buttonEight').addClass('highlight'); 
+            $('#buttonNine').addClass('current'); 
+        }
+        else {
+            $('#buttonEight').removeClass('highlight');
+        }
+    });
+    
+    $('input#toggle9').change(function(){
+        if($('input#toggle:checked').length>0) {
+            $('#buttonNine').removeClass('current'); 
+            $('#buttonNine').addClass('highlight'); 
+            $('#buttonTen').addClass('current'); 
+        }
+        else {
+            $('#buttonNine').removeClass('highlight');
+        }
+    });
+    
+    $('input#toggle10').change(function(){
+        if($('input#toggle:checked').length>0) {
+            $('#buttonTen').removeClass('current'); 
+            $('#buttonTen').addClass('highlight'); 
+           
+        }
+        else {
+            $('#buttonTen').removeClass('highlight');
+        }
+    });
+    
     $("#buttonOne").click(function() {
         $("#textOne").show();
         $("#textTwo").hide();
@@ -155,6 +211,91 @@ $(document).ready(function() {
         $("#textEight").hide();
         $("#textNine").hide();
         $("#textTen").hide();
+
+        $("#textSix").each(function () {
+            $(this).addClass("animated bounceInLeft");
+        })
+    });
+    
+     $("#toggle6").click(function() {
+        $("#textOne").hide();
+        $("#textTwo").hide();
+        $("#textThree").hide();
+        $("#textFour").hide();
+        $("#textFive").hide();
+        $("#textSix").hide();
+        $("#textSeven").show();
+        $("#textEight").hide();
+        $("#textNine").hide();
+        $("#textTen").hide();
+
+        $("#textSeven").each(function () {
+            $(this).addClass("animated bounceInLeft");
+        })
+    });
+    
+     $("#toggle7").click(function() {
+        $("#textOne").hide();
+        $("#textTwo").hide();
+        $("#textThree").hide();
+        $("#textFour").hide();
+        $("#textFive").hide();
+        $("#textSix").hide();
+        $("#textSeven").hide();
+        $("#textEight").show();
+        $("#textNine").hide();
+        $("#textTen").hide();
+
+        $("#textEight").each(function () {
+            $(this).addClass("animated bounceInLeft");
+        })
+    });
+    
+     $("#toggle8").click(function() {
+        $("#textOne").hide();
+        $("#textTwo").hide();
+        $("#textThree").hide();
+        $("#textFour").hide();
+        $("#textFive").hide();
+        $("#textSix").hide();
+        $("#textSeven").hide();
+        $("#textEight").hide();
+        $("#textNine").show();
+        $("#textTen").hide();
+
+        $("#textNine").each(function () {
+            $(this).addClass("animated bounceInLeft");
+        })
+    });
+    
+     $("#toggle9").click(function() {
+        $("#textOne").hide();
+        $("#textTwo").hide();
+        $("#textThree").hide();
+        $("#textFour").hide();
+        $("#textFive").hide();
+        $("#textSix").hide();
+        $("#textSeven").hide();
+        $("#textEight").hide();
+        $("#textNine").hide();
+        $("#textTen").show();
+
+        $("#textTen").each(function () {
+            $(this).addClass("animated bounceInLeft");
+        })
+    });
+    
+     $("#toggle10").click(function() {
+        $("#textOne").hide();
+        $("#textTwo").hide();
+        $("#textThree").hide();
+        $("#textFour").hide();
+        $("#textFive").hide();
+        $("#textSix").hide();
+        $("#textSeven").hide();
+        $("#textEight").hide();
+        $("#textNine").hide();
+        $("#textTen").show();
 
         $("#textSix").each(function () {
             $(this).addClass("animated bounceInLeft");
