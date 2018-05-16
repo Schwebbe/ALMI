@@ -26,10 +26,35 @@ html {
     min-height: 100%;
 }
 
+.button-custom {
+    background-color: transparent;
+    border-radius: 0;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+.button-custom:hover {
+    border-radius: 0;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+.center {
+    text-align: center;
+    font-size: 25px;
+    vertical-align: middle;
+    
+}
+
 .logo {
     width: 20%;
     margin-top: 20px;
     margin-bottom: 80px;
+}
+
+.hover:hover {
+    background-color: #1dade2 !important;
+    text-decoration: none !important;
 }
 
 .progress {
@@ -85,6 +110,100 @@ html {
     color: white !important;
 }
 
+.navbar-menu-toggler {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    padding: 20px 20px;
+}
+
+.navbar-side {
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    list-style: none;
+    border-left: 2px solid #ccc;
+    background-color: #23C3FF;
+    overflow-y: scroll;
+    z-index: 1000;
+}
+.navbar-side-item {
+    margin: 0;
+    border-bottom: 0;
+    height: 4rem;
+}
+.navbar-side {
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    list-style: none;
+    border-left: 2px solid #ccc;
+    background-color: #23C3FF;
+    overflow-y: scroll;
+    z-index: 1000;
+}
+.navbar-side-item {
+    margin: 0;
+    border-bottom: 0;
+    height: 4rem;
+}
+.navbar-toggler {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    padding: 20px 20px;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #000;
+    opacity: 0.3;
+    z-index: 990;
+}
+
+.side-link {
+    padding-left: 2rem;
+}
+
+.navbar-side {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+.reveal {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+.side-link {
+    padding-left: 2rem;
+}
+
+
 .toggle-btn {
     width: 80px;
     border: none;
@@ -110,4 +229,19 @@ html {
     line-height: 60px; /* Vertically center the text there. */
     background-color: #f5f5f5;
     margin-top: 20px;
+}
+
+/* FONT COLOURS */
+
+.white {
+    color: white;
+}
+.black {
+    color: black;
+}
+.red {
+    color: red;
+}
+.green {
+    color: green;
 }

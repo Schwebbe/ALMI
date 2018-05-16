@@ -1,5 +1,19 @@
 $(document).ready(function() {
+    
+    $('#navbarSideButton').on('click', function () {
+        $('#navbarSide').addClass('reveal');
+        $('.navbar-side-item').addClass('animated fadeInUp');
+        $('.overlay').show();
+    });
+    
+    $('.navbar-menu-toggler').on('click', function () {
+        $('#navbarSide').removeClass('reveal');
+        $('.overlay').hide();
+    });
+    
     // Hide all text boxes but the first, as default.
+    
+    
     $("#textid2").hide();
     $("#textid3").hide();
     $("#textid4").hide();
