@@ -40,7 +40,7 @@ $(document).ready(function() {
             $("#toggle" + id).click(function() {
                 $(currentButton).addClass("checked"); // Add "checked" to current button.
 
-                // If it's "OFF" remove class "checked".
+                // If it's not read remove class "checked".
                 if ($("#toggle" + id).val() === "Ej läst") {
                     $(currentButton).removeClass("checked");
                 };
@@ -52,4 +52,6 @@ $(document).ready(function() {
     var theDiv = document.getElementById("levelButtons");
     docFrag.innerHTML = docFrag;
     theDiv.appendChild(docFrag);
+    
+    $("#id1").click(); // "Click" first button as default.
 });
