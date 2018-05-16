@@ -1,28 +1,20 @@
 $(document).ready(function() {
-    
+
     $('#navbarSideButton').on('click', function () {
         $('#navbarSide').addClass('reveal');
         $('.navbar-side-item').addClass('animated fadeInUp');
         $('.overlay').show();
     });
-    
+
     $('.navbar-menu-toggler').on('click', function () {
         $('#navbarSide').removeClass('reveal');
         $('.overlay').hide();
     });
-    
+
     // Hide all text boxes but the first, as default.
-    
-    
-    $("#textid2").hide();
-    $("#textid3").hide();
-    $("#textid4").hide();
-    $("#textid5").hide();
-    $("#textid6").hide();
-    $("#textid7").hide();
-    $("#textid8").hide();
-    $("#textid9").hide();
-    $("#textid10").hide();
+    for (var i = 2; i < 10; i++) {
+        $("#textid" + i).hide();
+    };
 
     // Append out level buttons.
     var docFrag = document.createDocumentFragment();
@@ -50,7 +42,7 @@ $(document).ready(function() {
 
             var currentButton = document.getElementById(this.id); // Get current button's element.
 
-            // Handle toggling.
+            // Handle toggling with level buttons.
             $("#toggle" + id).click(function() {
                 $(currentButton).addClass("checked"); // Add "checked" to current button.
 
@@ -66,6 +58,6 @@ $(document).ready(function() {
     var theDiv = document.getElementById("levelButtons");
     docFrag.innerHTML = docFrag;
     theDiv.appendChild(docFrag);
-    
+
     $("#id1").click(); // "Click" first button as default.
 });
