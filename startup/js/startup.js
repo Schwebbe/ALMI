@@ -44,11 +44,13 @@ $(document).ready(function() {
 
             // Handle toggling with level buttons.
             $("#toggle" + id).click(function() {
-                $(currentButton).addClass("checked"); // Add "checked" to current button.
+                $(currentButton).addClass("checked"); // Add "checked" to current level button.
+                $(currentButton).val("✓"); // Change current level button's value to a check marker.
 
                 // If it's not read remove class "checked".
                 if ($("#toggle" + id).val() === "Ej läst") {
                     $(currentButton).removeClass("checked");
+                    $(currentButton).val(id.slice(2)); // Change current level button's value to its original number, extracted from the ID.
                 };
             });
         };

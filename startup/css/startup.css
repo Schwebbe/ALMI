@@ -64,7 +64,7 @@ html {
 }
 
 .progress-bar {
-    background-color: green;
+    background-color: #41964b;
 }
 
 .level-btn {
@@ -102,12 +102,12 @@ html {
 }
 
 .checked {
-    background-color: green;
+    background-color: #41964b;
 }
 
 .read {
-    background-color: green !important;
-    color: white !important;
+    background-color: #41964b !important;
+    color: #fff !important;
 }
 
 .navbar-menu-toggler {
