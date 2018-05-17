@@ -23,9 +23,25 @@ h2 {
     font-size: 18px;
     color: #fff;
 }
-
+.center {
+    text-align: center;
+    font-size: 25px;
+    vertical-align: middle;
+}
 #almiLogo{width: 600px; height: auto; margin-top: 15%;}
 .StartButtonDiv{margin-top: 5%;}
+
+.button-custom {
+    background-color: transparent;
+    border-radius: 0;
+    color: white;
+    border: 0;
+}
+
+.hover:hover {
+    background-color: #1dade2 !important;
+    text-decoration: none !important;
+}
 
 .startbuttons {
     background-color: #1388ae;
@@ -41,6 +57,220 @@ h2 {
     cursor: pointer;
     width: 230px;
 }
+
+
+.navbar-menu-toggler {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    padding: 20px 20px;
+}
+
+.navbar-side {
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    list-style: none;
+    border-left: 2px solid #ccc;
+    background-color: #23C3FF;
+    overflow-y: scroll;
+    z-index: 1000;
+}
+.navbar-side-item {
+    margin: 0;
+    border-bottom: 0;
+    height: 4rem;
+}
+.navbar-side {
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    list-style: none;
+    border-left: 2px solid #ccc;
+    background-color: #23C3FF;
+    overflow-y: scroll;
+    z-index: 1000;
+}
+.navbar-side-item {
+    margin: 0;
+    border-bottom: 0;
+    height: 4rem;
+}
+.navbar-toggler {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    padding: 20px 20px;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #000;
+    opacity: 0.3;
+    z-index: 990;
+}
+
+.side-link {
+    padding-left: 2rem;
+}
+
+.navbar-side {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+.reveal {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transition: 300ms ease;
+    transition: 300ms ease;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .modal .modal-content {
+        min-height: 100vh;
+    }
+    .navbar-side {
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        padding: 20px 20px;
+    }
+    .navbar-toggle {
+        padding: 20px 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .modal .modal-content {
+        min-height: 100vh;
+        margin: 0;
+    }
+    .navbar-side {
+        width: 50%;
+    }
+
+    .navbar-toggler {
+        padding: 20px 20px;
+    }
+    .navbar-toggle {
+        padding: 20px 20px;
+    }
+}
+@media only screen and (max-width: 1366px) {
+    .modal .modal-content {
+        margin-top: 60px;
+        min-height: 60vh;
+    }
+    .navbar-side {
+        width: 50%;
+    }
+
+    .navbar-toggler {
+        padding: 20px 20px;
+    }
+    .navbar-toggle {
+        padding: 20px 20px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .navbar-side {
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        padding: 20px 20px;
+    }
+    .navbar-toggle {
+        padding: 20px 20px;
+    }
+    .modal .modal-content {
+        min-height: 100vh;
+        margin: 0 !important;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .no-csstransforms li {
+        width: 4em;
+        height: 4em;
+        line-height: 4em;
+    }
+    .modal .modal-content {
+        min-height: 100vh;
+        margin: 0 !important;
+    }
+    .mobile {
+        max-width: 60% !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .no-csstransforms .cn-wrapper {
+        padding: .5em;
+    }
+    .no-csstransforms .cn-wrapper li {
+        font-size: .9em;
+        width: 4em;
+        height: 4em;
+        line-height: 4em;
+    }
+    .modal .modal-content {
+        min-height: 100vh;
+        margin: 0 !important;
+    }
+    .font-mobile-h1 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .csstransforms .cn-wrapper {
+        font-size: .68em;
+    }
+    .cn-button {
+        font-size: 1em;
+    }
+    .modal .modal-content {
+        min-height: 100vh;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .no-csstransforms .cn-wrapper {
+        width: 100%;
+        height: 3em;
+        line-height: 3em;
+    }
+}
+
+
 
 
 /* Sticky footer styles
@@ -60,4 +290,20 @@ h2 {
     color: #fff;
     padding: 40px;
     margin: 0;
+}
+
+
+/* FONT COLOURS */
+
+.white {
+    color: white;
+}
+.black {
+    color: black;
+}
+.red {
+    color: red;
+}
+.green {
+    color: green;
 }
