@@ -31,10 +31,10 @@ $(document).ready(function() {
         elem.onclick = function(elem) {
             for (var i = 1; i < 11; i++) {
                 $("#textid" + i).hide(); // Hide all text boxes.
-                $("#id" + i).removeClass("current animated flash infinite"); // Remove "current" from all buttons.
+                $("#id" + i).removeClass("current animated pulse infinite"); // Remove "current" and animation from all buttons.
             };
 
-            $(this).addClass("current animated flash infinite"); // Add "current" to current button.
+            $(this).addClass("current animated pulse infinite"); // Add "current" and animation to current button.
 
             var id = document.getElementById(this.id).id; // Get current button's ID.
             $("#text" + id).show(); // Show current text box.
@@ -44,8 +44,7 @@ $(document).ready(function() {
 
             // Handle toggling with level buttons.
             $("#toggle" + id).click(function() {
-                $(currentButton).addClass("checked");
-                $(currentButton).removeClass("animated flash infinite");// Add "checked" to current level button.
+                $(currentButton).addClass("checked"); // Add "checked" to current level button.
                 $(currentButton).val("✓"); // Change current level button's value to a check marker.
 
                 // If it's not read remove class "checked".
