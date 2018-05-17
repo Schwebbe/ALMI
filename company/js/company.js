@@ -83,7 +83,7 @@ $('.navbar-menu-toggler').on('click', function () {
 
     function handler(){
         if(!open){
-            this.innerHTML = "Close";
+            this.innerHTML = "Stäng";
             classie.add(wrapper, 'opened-nav');
         }
         else{
