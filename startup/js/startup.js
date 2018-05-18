@@ -6,6 +6,10 @@ $(document).ready(function() {
         $('.overlay').show();
     });
 
+    $('.btn').click(function () {
+        $("#exampleModal2").modal();
+    })
+    
     $('.navbar-menu-toggler').on('click', function () {
         $('#navbarSide').removeClass('reveal');
         $('.overlay').hide();
