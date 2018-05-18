@@ -46,6 +46,10 @@ html {
     
 }
 
+.delay {
+    animation-delay: .3s;
+}
+
 .logo {
     width: 20%;
     margin-top: 20px;

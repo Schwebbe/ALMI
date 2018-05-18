@@ -38,7 +38,7 @@ $(document).ready(function() {
 
             var id = document.getElementById(this.id).id; // Get current button's ID.
             $("#text" + id).show(); // Show current text box.
-            $("#text" + id).addClass("animated bounceInLeft"); // Animate text box to slide in.
+            $("#text" + id).addClass("animated bounceInRight"); // Animate text box to slide in.
 
             var currentButton = document.getElementById(this.id); // Get current button's element.
 
@@ -46,6 +46,15 @@ $(document).ready(function() {
             $("#toggle" + id).click(function() {
                 $(currentButton).addClass("checked"); // Add "checked" to current level button.
                 $(currentButton).val("✓"); // Change current level button's value to a check marker.
+
+                var numbFromId = id.slice(2); // Get current button ID's number.
+                var numbFromIdInt = parseInt(numbFromId); // Convert number string to int.
+                var nextButtonIdNumb = numbFromIdInt + 1; // Add 1 to the number.
+                
+                // Click next button after a delay.
+                setTimeout(function() {
+                    $("#id" + nextButtonIdNumb).click();
+                }, 650);
 
                 // If it's not read remove class "checked".
                 if ($("#toggle" + id).val() === "Ej läst") {

@@ -87,7 +87,7 @@ $('.navbar-menu-toggler').on('click', function () {
             classie.add(wrapper, 'opened-nav');
         }
         else{
-            this.innerHTML = "Menu";
+            this.innerHTML = "Meny";
             classie.remove(wrapper, 'opened-nav');
         }
         open = !open;

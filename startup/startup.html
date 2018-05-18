@@ -28,6 +28,10 @@
             }
 
             $(".progress-bar").css("width", emptyValue + "%").attr("aria-valuenow", emptyValue);
+            
+            if(emptyValue === 100) {
+                $("#exampleModal").modal();
+            }
         }
     </script>
 
@@ -213,7 +217,33 @@
                 </div>
             </div>
         </div>
+        <!-- Button trigger modal -->
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Du är klar!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Du har nu läst grundläggande information om hur du startar ditt egna företag!
+                        <br>
+                        <br>
+                        Vill du läsa vidare på hur du utvecklar ditt företag?
+                        <br>
+                        <br>
+                        Klicka "Läs vidare" om du vill läsa mer!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Läs vidare</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer class="footer">
             <div class="container">
                 <center><span class="text-muted">© 2018 Almi</span></center>
