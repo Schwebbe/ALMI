@@ -43,7 +43,7 @@ html {
     text-align: center;
     font-size: 25px;
     vertical-align: middle;
-    
+
 }
 
 .delay {
@@ -55,6 +55,21 @@ html {
     margin-top: 20px;
     margin-bottom: 80px;
 }
+
+.videoButton{
+  border-radius: 5px;
+  margin-top: 8px;
+  margin-right: 8px;
+  border: 0px;
+  background-color: #fff;
+  float: right;
+  outline: none;
+}
+.videoButton:hover{
+  background-color: #1388ae;
+  color: #fff;
+}
+
 
 .hover:hover {
     background-color: #095973 !important;
@@ -80,6 +95,7 @@ html {
     background-color: #1388ae;
     color: #fff;
     cursor: pointer;
+    outline: none;
 }
 
 .text-box {
@@ -215,6 +231,7 @@ html {
     background-color: #e2e2e2;
     color: #4c4c4c;
     cursor: pointer;
+    outline: none;
     right 0;
     bottom: 0;
 
