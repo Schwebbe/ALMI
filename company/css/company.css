@@ -347,12 +347,13 @@ body {
 }
 .modal-body {
     position: absolute;
-    top: 50px;
-    bottom: 60px;
+    top: 0px;
+    bottom: 0px;
     width: 100%;
     font-weight: 300;
     overflow: auto;
-    color: black;
+    color: white;
+    background-color: #1388ae;
 
 }
 

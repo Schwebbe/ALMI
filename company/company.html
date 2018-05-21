@@ -2,436 +2,394 @@
 <html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
 
     <head>
-        <title> ALMI Företagspartner AB </title>
-        <meta charset='utf-8'>
+    <title> ALMI Företagspartner AB </title>
+    <meta charset='utf-8'>
 
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,  minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,  minimum-scale=1.0">
 
-        <!-- Bootstrap Css 4.1 -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Bootstrap Css 4.1 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-        <!-- animate CSS -->
-        <link rel="stylesheet" href="css/animate.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
 
-        <!-- normalize CSS -->
+    <!-- normalize CSS -->
 
-        <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
 
 
 
-        <!-- font awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-        <!-- Mina filer -->
-        <link rel="stylesheet" type="text/css" href="css/company.css" />
-    </head>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- Mina filer -->
+    <link rel="stylesheet" type="text/css" href="css/company.css" />
+</head>
 
-    <body>
-        <nav class="navbar navbar-light navbar-static bg-faded" role="navigation">
-            <a class="navbar-brand"> 
+<body>
+    <nav class="navbar navbar-light navbar-static bg-faded" role="navigation">
+        <a class="navbar-brand"> 
                 <button class="navbar-toggler button-custom pull-xs-right" id="navbarSideButton" type="button">
                     <span style="color: white;">&#9776;</span>
                 </button>
             </a>
-            <ul class="nav navbar-nav">
-                <li class="nav-item">
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
 
-                </li>
-                <!-- insert more nav-items if you so choose -->
+            </li>
+            <!-- insert more nav-items if you so choose -->
 
-            </ul>
-            <!-- navbar-side will go here -->
-            <ul class="navbar-side" id="navbarSide" style="overflow:hidden;">
-                <a class="navbar-brand"> 
+        </ul>
+        <!-- navbar-side will go here -->
+        <ul class="navbar-side" id="navbarSide" style="overflow:hidden;">
+            <a class="navbar-brand"> 
                     <button class=" navbar-menu-toggler button-custom pull-xs-right" id="navbarSideButton" type="button">
                         <span style="cursor: pointer;">X Stäng</span>
                     </button>
                 </a>
-                <li class="navbar-side-item hover">
-                    <a style=" display:inline-block;
+            <li class="navbar-side-item hover">
+                <a style=" display:inline-block;
                               width:100%;
                               height:100%;" href="../home/index.html" class="hover">
-                        <h1 style="margin-top: 16px;" class="center white">Hem</h1>
-                    </a>
-                </li>
+                    <h1 style="margin-top: 16px;" class="center white">Hem</h1>
+                </a>
+            </li>
 
-                <li class="navbar-side-item hover">
-                    <a style=" display:inline-block;
+            <li class="navbar-side-item hover">
+                <a style=" display:inline-block;
                               width:100%;
                               height:100%;" href="../startup/startup.html" class="hover">
-                        <h1 style="margin-top: 16px;" class="center white">Starta företag</h1>
-                    </a>
-                </li>
+                    <h1 style="margin-top: 16px;" class="center white">Starta företag</h1>
+                </a>
+            </li>
 
-                <li class="navbar-side-item hover">
-                    <a style=" display:inline-block;
+            <li class="navbar-side-item hover">
+                <a style=" display:inline-block;
                               width:100%;
                               height:100%;" href="../company/company.html" class="hover">
-                        <h1 style="margin-top: 16px;" class="center white">Utveckla företag</h1>
-                    </a>
-                </li>
-                <!-- insert more side-items if you so choose -->
-                <table class="lists">
+                    <h1 style="margin-top: 16px;" class="center white">Utveckla företag</h1>
+                </a>
+            </li>
+            <!-- insert more side-items if you so choose -->
+            <table class="lists">
 
-                </table>
+            </table>
+        </ul>
+        <div class="overlay"></div>
+
+
+    </nav>
+
+    <div class="jumbotron hidden">
+        <h1 class="center white font-mobile-h1">Vad vill du lära dig om?</h1>
+        <h1 class="center white font-mobile-h1">Använd menyn nedan för specifika kategorier!</h1>
+    </div>
+    <div class="container test">
+        <!-- Start Nav Structure -->
+        <button style="" class="cn-button" id="cn-button">Meny</button>
+        <div class="cn-wrapper" id="cn-wrapper">
+            <ul>
+                <li><a href="#" data-toggle="modal" data-target="#fsModal"><span>Mallar</span></a></li>
+                <li><a href="#" data-toggle="modal" data-target="#fsModal2"><span class="long">Rådgivning</span></a></li>
+                <li><a href="#" data-toggle="modal" data-target="#fsModal3"><span>FAQ</span></a></li>
+                <li><a href="#" data-toggle="modal" data-target="#fsModal4"><span>Kontakt</span></a></li>
+                <li><a href="#" data-toggle="modal" data-target="#fsModal5"><span>Låt</span></a></li>
+                <li><a href="#" data-toggle="modal" data-target="#fsModal6"><span class="long">Riskkapital</span></a></li>
+                <li><a href="#" data-toggle="modal" data-target="#fsModal7"><span>Test</span></a></li>
             </ul>
-            <div class="overlay"></div>
-
-
-        </nav>
-
-        <div class="jumbotron hidden">
-            <h1 class="center white font-mobile-h1">Vad vill du lära dig om?</h1>
-            <h1 class="center white font-mobile-h1">Använd menyn nedan för specifika kategorier!</h1>
         </div>
-        <div class="container test">
-            <!-- Start Nav Structure -->
-            <button style="" class="cn-button" id="cn-button">Meny</button>
-            <div class="cn-wrapper" id="cn-wrapper">
-                <ul>
-                    <li><a href="#" data-toggle="modal"
-                           data-target="#fsModal"><span>Mallar</span></a></li>
-                    <li><a href="#" data-toggle="modal"
-                           data-target="#fsModal2"><span class="long">Rådgivning</span></a></li>
-                    <li><a href="#" data-toggle="modal"
-                           data-target="#fsModal3"><span>FAQ</span></a></li>
-                    <li><a href="#" data-toggle="modal"
-                           data-target="#fsModal4"><span>Kontakt</span></a></li>
-                    <li><a href="#" data-toggle="modal"
-                           data-target="#fsModal5"><span>Låt</span></a></li>
-                    <li><a href="#" data-toggle="modal"
-                           data-target="#fsModal6"><span class="long">Riskkapital</span></a></li>
-                    <li><a href="#" data-toggle="modal"
-                           data-target="#fsModal7"><span>Test</span></a></li>
-                </ul>
-            </div>
-            <!-- End of Nav Structure -->
-        </div>
+        <!-- End of Nav Structure -->
+    </div>
 
 
-        <!-- modal -->
-        <div id="fsModal" class="modal animated fadeIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- modal -->
+    <div id="fsModal" class="modal animated fadeIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
-            <!-- dialog -->
-            <div class="modal-dialog">
+        <!-- dialog -->
+        <div class="modal-dialog">
 
-                <!-- content -->
-                <div class="modal-content">
+            <!-- content -->
+            <div class="modal-content">
 
 
+                <!-- body -->
+                <div class="modal-body">
 
-                    <div style="padding: 16px;">
-                        <span  data-dismiss="modal"><i style="color: black; cursor: pointer;" class="fas fa-times"></i> Stäng</span>
+                    <span style="cursor: pointer; float: right;" data-dismiss="modal"><i style="color: white;" class="fas fa-times"></i> Stäng</span>
+                    <br>
+                    <br>
+                    <h2>Affärsplan</h2>
+                    <p>Affärsplanen är en e-tjänst som på ett strukturerat sätt beskriver hur du tänker arbeta med ditt företag i framtiden – oavsett om det är nystartat eller redan igång. I affärsplanen tar du ställning till vilka strategier du och ditt företag har för olika områden.</p>
+                    <br>
+                    <h2>Budgetmallar</h2>
+                    <p>Om du ska komma igång med eget företag eller om du ska göra budget i ett mindre, igångvarande företag kan du ha stor nytta av Almis budgetmallar. Steg för steg gör du en färdig budget.</p>
+                    <br>
+                    <h2>Idébeskrivning</h2>
+                    <p>Innovationsplanen följer Almis modell Fokus Affärsutveckling som beskriver hur man stegvis kan utveckla en innovativ idé till ett framgångsrikt företag.</p>
 
-                        <h2>Affärsplan</h2>
-                        <p>Affärsplanen är en e-tjänst som på ett strukturerat sätt beskriver hur du tänker arbeta med ditt företag i framtiden – oavsett om det är nystartat eller redan igång. I affärsplanen tar du ställning till vilka strategier du och ditt företag har för olika områden.</p>
-
-                        <h2>Budgetmallar</h2>
-                        <p>Om du ska komma igång med eget företag eller om du ska göra budget i ett mindre, igångvarande företag kan du ha stor nytta av Almis budgetmallar. Steg för steg gör du en färdig budget.</p>
-
-                        <h2>Idébeskrivning</h2>
-                        <p>Innovationsplanen följer Almis modell Fokus Affärsutveckling som beskriver hur man stegvis kan utveckla en innovativ idé till ett framgångsrikt företag.</p>
-
-                        <h2>Kompanjonskap – en checklista</h2>
-                        <p>Att driva företag i kompanjonskap kan vara postivit av många skäl. Man kan kombinera olika kunskaper och erfarenheter, ge varandra stöd i ett krävande arbete, och vidga kontaktnätet.</p>
-
-                        <h2>Lönsamhetskalkyl</h2>
-                        <p>Att planera för en företagsstart kan vara en ganska lång process med många moment, inte minst för att få fram en väl genomarbetad budget. För att du ska kunna göra en första test av lönsamheten i din idé har Almi tagit fram några olika "snabbkalkyler".</p>
-
-                        <h2>Marknadsplan</h2>
-                        <p>I marknadsplanen gör du på ett strukturerat sätt en kartläggning av hur marknaden och konkurrentsituationen ser ut.</p></div>
+                    <h2>Kompanjonskap – en checklista</h2>
+                    <p>Att driva företag i kompanjonskap kan vara postivit av många skäl. Man kan kombinera olika kunskaper och erfarenheter, ge varandra stöd i ett krävande arbete, och vidga kontaktnätet.</p>
+                    <br>
+                    <h2>Lönsamhetskalkyl</h2>
+                    <p>Att planera för en företagsstart kan vara en ganska lång process med många moment, inte minst för att få fram en väl genomarbetad budget. För att du ska kunna göra en första test av lönsamheten i din idé har Almi tagit fram några olika "snabbkalkyler".</p>
+                    <br>
+                    <h2>Marknadsplan</h2>
+                    <p>I marknadsplanen gör du på ett strukturerat sätt en kartläggning av hur marknaden och konkurrentsituationen ser ut.</p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- modal -->
-        <div id="fsModal2" class="modal animated fadeIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- modal -->
+    <div id="fsModal2" class="modal animated fadeIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
-            <!-- dialog -->
-            <div class="modal-dialog">
+        <!-- dialog -->
+        <div class="modal-dialog">
 
-                <!-- content -->
-                <div class="modal-content">
-
-
-
-                    <!-- body -->
-                    <div class="modal-body">
+            <!-- content -->
+            <div class="modal-content">
 
 
-                        <span  data-dismiss="modal"><i style="color: black; cursor: pointer;" class="fas fa-times"></i> Stäng</span>
 
-                        <h1>Om Almis rådgivning</h1>
-                        <p>
-                            För att lyckas med en satsning behövs det ofta mer än en stark vilja och en god affärsidé. I många fall behövs det även stöd från erfarna rådgivare. På Almi kan vi det här med företagande. Oavsett vilken satsning du står inför bör du kontakta Almi. <br>
+                <!-- body -->
+                <div class="modal-body">
 
-                            Tillväxtrådgivning består av tillväxtprogram för både unga och etablerade företag. Företaget ska ha en potential att växa eller befinna sig i en kraftig tillväxtfas. Programmen ger beprövade metoder och inspiration att påbörja och fullfölja en tillväxtresa tillsammans med andra företagare i liknande situationer. Almis Tillväxtrådgivning omfattar även styrelseutveckling genom Skuggstyrelse och Lönsamhetsstyrning. <br>
-                            Mentor. Genom Almi får en adept tillgång till en mentor som ställer upp ideellt. Varje år matchas mellan femtonhundra och tvåtusen mentorpar i de två mentorprogrammen - Mentor Starta Företag och Mentor Utveckla Företag. <br>
-                            Innovationsrådgivning. För unika idéer som är nya eller väsentligt förbättrad mot de lösningar som finns på marknaden idag och som har affärspotential. Vi erbjuder stöd från erfarna rådgivare med kontaktnät, finansiella verktyg och beprövad projektmodell <br>
-                            Köpa företag. Är du på väg att köpa ett företag? I samband med ägarskiften erbjuder vi rådgivning där fokus ligger på köparen av företag. <br>
-                            Seminarier och kurser. Almi har en omfattande seminarieverksamhet inom olika områden av företagandet.
-                       
 
-                        </p>
-                        <h1>Så här fungerar det </h1>
-                        <p>All rådgivning är regionalt baserad och varierar från region till region. De flesta av Almis regionala bolag erbjuder enbart vissa delar av ovanstående utbud.
+                    <span style=" cursor: pointer; float:right;" data-dismiss="modal"><i style="color: white;" class="fas fa-times"></i> Stäng</span>
+                    <br>
+                    <br>
+                    <h1>Om Almis rådgivning</h1>
+                    <p>
+                        För att lyckas med en satsning behövs det ofta mer än en stark vilja och en god affärsidé. I många fall behövs det även stöd från erfarna rådgivare. På Almi kan vi det här med företagande. Oavsett vilken satsning du står inför bör du kontakta Almi. <br> Tillväxtrådgivning består av tillväxtprogram för både unga och etablerade företag. Företaget ska ha en potential att växa eller befinna sig i en kraftig tillväxtfas. Programmen ger beprövade metoder och inspiration att påbörja och fullfölja en tillväxtresa tillsammans med andra företagare i liknande situationer. Almis Tillväxtrådgivning omfattar även styrelseutveckling genom Skuggstyrelse och Lönsamhetsstyrning. <br> Mentor. Genom Almi får en adept tillgång till en mentor som ställer upp ideellt. Varje år matchas mellan femtonhundra och tvåtusen mentorpar i de två mentorprogrammen - Mentor Starta Företag och Mentor Utveckla Företag. <br>
+                    </p>
+                    <h1> Innovationsrådgivning. </h1>
+                    <p>
+                        För unika idéer som är nya eller väsentligt förbättrad mot de lösningar som finns på marknaden idag och som har affärspotential. Vi erbjuder stöd från erfarna rådgivare med kontaktnät, finansiella verktyg och beprövad projektmodell <br> Köpa företag. Är du på väg att köpa ett företag? I samband med ägarskiften erbjuder vi rådgivning där fokus ligger på köparen av företag. <br> Seminarier och kurser. Almi har en omfattande seminarieverksamhet inom olika områden av företagandet.</p>
+                    <h1>Så här fungerar det </h1>
+                    <p>All rådgivning är regionalt baserad och varierar från region till region. De flesta av Almis regionala bolag erbjuder enbart vissa delar av ovanstående utbud. Rådgivning utförs av Almis rådgivare eller av externa underkonsulter. Utgångspunkten är att våra kunder ska erbjudas bästa möjliga tjänst och kompetens utifrån sina behov. Vid behov hänvisar vi till andra aktörer. Kontaktförmedling är en viktig del av rådgivningsverksamheten.</p>
 
-                            Rådgivning utförs av Almis rådgivare eller av externa underkonsulter. Utgångspunkten är att våra kunder ska erbjudas bästa möjliga tjänst och kompetens utifrån sina behov. Vid behov hänvisar vi till andra aktörer. Kontaktförmedling är en viktig del av rådgivningsverksamheten.</p>
+                    <h1>Ansökan och kontakt</h1>
+                    Vill du ta del av vår rådgivning? För mer information om vilken rådgivning som erbjuds i din region väljer du län i menyn på denna sida. Information om seminarier och kurser hittar du i kalendariet på ditt regionala Almi-bolags startsida.
 
-                        <h1>Ansökan och kontakt</h1>
-                        Vill du ta del av vår rådgivning? För mer information om vilken rådgivning som erbjuds i din region väljer du län i menyn på denna sida.
-
-                        Information om seminarier och kurser hittar du i kalendariet på ditt regionala Almi-bolags startsida.
-
-                            <br>
-                            <br>
-                            <br>
-                        <h5>Innehållsansvarig: Lars Mårdbrant, lars.mardbrant@almi.se</h5>
-                        <b>Gå till ditt regionala Almi-bolag
+                    <br>
+                    <br>
+                    <br>
+                    <h5>Innehållsansvarig: Lars Mårdbrant, lars.mardbrant@almi.se</h5>
+                    <b>Gå till ditt regionala Almi-bolag
                             Våra tjänster kan variera från region till region. Välj län så kommer du till ditt regionala Almi-bolag.
 
                             Välj län
                             Kontakta oss
                             0771-55 85 00 | Kontaktformulär</b>
-                
-                    </div>
-                    <!-- body -->
+
                 </div>
+                <!-- body -->
             </div>
         </div>
+    </div>
 
-        <!-- modal FAQ -->
-        <div id="fsModal3" class="modal animated fadeIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- modal FAQ -->
+    <div id="fsModal3" class="modal animated fadeIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
-            <!-- dialog -->
-            <div class="modal-dialog">
+        <!-- dialog -->
+        <div class="modal-dialog">
 
-                <!-- content -->
-                <div class="modal-content">
-
-
-
-                    <!-- body -->
-                    <div class="modal-body">
+            <!-- content -->
+            <div class="modal-content">
 
 
-                        <span  data-dismiss="modal"><i style="color: black; cursor: pointer;" class="fas fa-times"></i> Stäng</span>
 
-                        <h2>Blir chansen större att få en mentor om man har fått finansiering via Almi?</h2>
-                        <p>Alla företag väljs ut utifrån tillväxtpotential och engagemang. Alla har således lika stor möjlighet att komma med.</p>
-                        
-                        <h2>Finansierar Almi bara företag i tillväxt?</h2>
-                        <p>Vi prioriterar den målgruppen men syftet med lånet är att det ska vara en framåtriktad satsning samt att ägaren kan ta ut en marknadsmässig lön.</p>
-                        
-                        <h2>Finns det möjlighet att få amorteringsanstånd på sitt lån?</h2>
-                        <p>Ja, möjligheten finns att få amorteringsanstånd efter sedvanlig kreditprövning.</p>
-                        
-                        <h2>Får jag låna pengar till att anställa någon?</h2>
-                        <p>Ja, du kan låna pengar för att finansiera personalkostnader. En mindre del kan gå till egen ägarlön.</p>
-                        
-                        <h2>Har ni sekretess?</h2>
-                        <p>Ja, alla medarbetare inom Almi arbetar under sekretess.</p>
-                        
-                        <h2>Hur fungerar mentorprogrammet?</h2>
-                        <p>Mentorprogrammet pågår under ett år och du och din mentor träffas ungefär en gång i månaden för att diskutera hur just ditt företag kan utvecklas. <br>
-    
-                            Mellan träffarna får du som adept "hemuppgifter" att arbeta med på egen hand. Det kan exempelvis handla om att du ska kontakta kunder med nya erbjudanden som du och din mentor har diskuterat under tidigare möten. På nästkommande möte går ni sedan igenom och utvärderar resultatet tillsammans. <br>
+                <!-- body -->
+                <div class="modal-body">
 
-                            Vid uppstarten av mentorskapet håller vi i en liten utbildning om hur du och din mentor ska kunna bedriva ett effektivt mentorskap. Detta för att du ska känna dig trygg att tala fritt om ditt företag.</p>
-                        
-                        <h2>Hur funkar det med starta-eget-bidrag i kombination med lån från Almi?</h2>
-                        <p>Starta-eget-bidrag kan kombineras med ett mikrolån. Möjligheten finns att få upp till 6 månader amorteringsfritt.</p>
-                        
-                        <h2>Hur gör jag för att lösa ett lån?</h2>
-                        <p>Kontakta Almis låneadministration på telefonnummer 063-453 03 00 så hjälper vi dig.</p>
-                        
-                        <h2>Hur gör vi om det inte funkar mellan adept och mentor?</h2>
-                        <p> Vi rekommenderar att man ger mentorskapet minst 2-3 träffar innan man tar beslut om att det inte är någon idé att gå vidare. Om ni efter ett antal träffar känner att det inte gett tillräckligt, kontaktar man sin handledare på Almi. </p>
-                        
-                        <h2>Hur kan jag göra en extraamortering?</h2>
-                        <p>Kontakta Almis låneadministration på telefonnummer 063-453 03 00 så hjälper vi dig med det.</p>
-                    </div>
-                    <!-- body -->
+
+                    <span style=" cursor: pointer; float:right;" data-dismiss="modal"><i style="color: white;" class="fas fa-times"></i> Stäng</span>
+                    <br>
+                    <br>
+                    <h2>Blir chansen större att få en mentor om man har fått finansiering via Almi?</h2>
+                    <p>Alla företag väljs ut utifrån tillväxtpotential och engagemang. Alla har således lika stor möjlighet att komma med.</p>
+                    <br>
+                    <h2>Finansierar Almi bara företag i tillväxt?</h2>
+                    <p>Vi prioriterar den målgruppen men syftet med lånet är att det ska vara en framåtriktad satsning samt att ägaren kan ta ut en marknadsmässig lön.</p>
+                    <br>
+                    <h2>Finns det möjlighet att få amorteringsanstånd på sitt lån?</h2>
+                    <p>Ja, möjligheten finns att få amorteringsanstånd efter sedvanlig kreditprövning.</p>
+
+                    <h2>Får jag låna pengar till att anställa någon?</h2>
+                    <p>Ja, du kan låna pengar för att finansiera personalkostnader. En mindre del kan gå till egen ägarlön.</p>
+                    <br>
+                    <h2>Har ni sekretess?</h2>
+                    <p>Ja, alla medarbetare inom Almi arbetar under sekretess.</p>
+                    <br>
+                    <h2>Hur fungerar mentorprogrammet?</h2>
+                    <p>Mentorprogrammet pågår under ett år och du och din mentor träffas ungefär en gång i månaden för att diskutera hur just ditt företag kan utvecklas. <br> Mellan träffarna får du som adept "hemuppgifter" att arbeta med på egen hand. Det kan exempelvis handla om att du ska kontakta kunder med nya erbjudanden som du och din mentor har diskuterat under tidigare möten. På nästkommande möte går ni sedan igenom och utvärderar resultatet tillsammans. <br> Vid uppstarten av mentorskapet håller vi i en liten utbildning om hur du och din mentor ska kunna bedriva ett effektivt mentorskap. Detta för att du ska känna dig trygg att tala fritt om ditt företag.</p>
+                    <br>
+                    <h2>Hur funkar det med starta-eget-bidrag i kombination med lån från Almi?</h2>
+                    <p>Starta-eget-bidrag kan kombineras med ett mikrolån. Möjligheten finns att få upp till 6 månader amorteringsfritt.</p>
+                    <br>
+                    <h2>Hur gör jag för att lösa ett lån?</h2>
+                    <p>Kontakta Almis låneadministration på telefonnummer 063-453 03 00 så hjälper vi dig.</p>
+                    <br>
+                    <h2>Hur gör vi om det inte funkar mellan adept och mentor?</h2>
+                    <p> Vi rekommenderar att man ger mentorskapet minst 2-3 träffar innan man tar beslut om att det inte är någon idé att gå vidare. Om ni efter ett antal träffar känner att det inte gett tillräckligt, kontaktar man sin handledare på Almi. </p>
+                    <br>
+                    <h2>Hur kan jag göra en extraamortering?</h2>
+                    <p>Kontakta Almis låneadministration på telefonnummer 063-453 03 00 så hjälper vi dig med det.</p>
                 </div>
+                <!-- body -->
             </div>
         </div>
-        
-        <!-- modal KONTAKT -->
-        <div id="fsModal4" class="modal animated fadeIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    </div>
 
-            <!-- dialog -->
-            <div class="modal-dialog">
+    <!-- modal KONTAKT -->
+    <div id="fsModal4" class="modal animated fadeIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
-                <!-- content -->
-                <div class="modal-content">
+        <!-- dialog -->
+        <div class="modal-dialog">
 
-
-
-                    <!-- body -->
-                    <div class="modal-body">
-
-
-                        <span  data-dismiss="modal"><i style="color: black; cursor: pointer;" class="fas fa-times"></i> Stäng</span>
-                        <h1>Kontakta oss</h1>
-                        Ny kund? Vill du veta mer om våra tjänster?
-                        Ring 0771-55 85 00
-                        Öppettider: 09:00-12:00, 13:00-16:00.
-                        Kontaktformulär »
-
-                        <h1>Redan kund hos oss?</h1>
-                        Kontakta den rådgivare du tidigare varit i kontakt med.
-
-                        <h1>Söker du någon på Almi?</h1>
-                        Kontakta vår växel.
-                        Telefon: 0771-55 85 00
-                        Öppettider: 08:00-17:00
-
-                        <h3>Har du frågor om konkurs, företagsrekonstruktion eller har du fått ett inkassokrav?</h3>
-
-                        Kontakta Alpidus Inkasso »
-
-                        <h1>Har du frågor om ditt lån?</h1>
-                        Kontakta vår låneadministration. <br>
-                        Telefon: 063-453 03 00 <br>
-                        E-post: info.lanadm@almi.se <br>
-                        Öppettider: 08:30-12:00, 13:00-16:00 <br>
-                        Obs! Onsdagar öppnar vi 09:30
-
-                        <h3>Vid förfrågningar om villkorsändringar kontakta din rådgivare.</h3>
-
-                        Visselblåsning <br>
-                        Rapportera misstänkta oegentligheter. <br>
-                        Almis visselblåsartjänst »
+            <!-- content -->
+            <div class="modal-content">
 
 
 
-                    </div>
-                    <!-- body -->
+                <!-- body -->
+                <div class="modal-body">
+
+
+                    <span style=" cursor: pointer; float:right;" data-dismiss="modal"><i style="color: white;" class="fas fa-times"></i> Stäng</span>
+                    <br>
+                    <br>
+                    <h1>Kontakta oss</h1>
+                    Ny kund? Vill du veta mer om våra tjänster? Ring 0771-55 85 00 Öppettider: 09:00-12:00, 13:00-16:00. Kontaktformulär »
+<br>
+                    <h1>Redan kund hos oss?</h1>
+                    Kontakta den rådgivare du tidigare varit i kontakt med.
+<br>
+                    <h1>Söker du någon på Almi?</h1>
+                    Kontakta vår växel. Telefon: 0771-55 85 00 Öppettider: 08:00-17:00
+<br>
+                    <h3>Har du frågor om konkurs, företagsrekonstruktion eller har du fått ett inkassokrav?</h3>
+<br>
+                    Kontakta Alpidus Inkasso »
+<br><br>
+                    <h1>Har du frågor om ditt lån?</h1>
+                    Kontakta vår låneadministration. <br> Telefon: 063-453 03 00 <br> E-post: info.lanadm@almi.se <br> Öppettider: 08:30-12:00, 13:00-16:00 <br> Obs! Onsdagar öppnar vi 09:30
+<br><br>
+                    <h3>Vid förfrågningar om villkorsändringar kontakta din rådgivare.</h3>
+<br>
+                    Visselblåsning <br> Rapportera misstänkta oegentligheter. <br> Almis visselblåsartjänst »
+
+
+
                 </div>
+                <!-- body -->
             </div>
         </div>
+    </div>
 
-        <!-- modal -->
-        
-        <div id="fsModal5" class="modal animated fadeIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- modal -->
 
-            <!-- dialog -->
-            <div class="modal-dialog">
+    <div id="fsModal5" class="modal animated fadeIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
-                <!-- content -->
-                <div class="modal-content">
+        <!-- dialog -->
+        <div class="modal-dialog">
 
-
-
-                    <!-- body -->
-                    <div class="modal-body">
+            <!-- content -->
+            <div class="modal-content">
 
 
-                        <span  data-dismiss="modal"><i style="color: black; cursor: pointer;" class="fas fa-times"></i> Stäng</span>
-                        <h1>Lorem ipsum</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor vitae justo quis eleifend. Ut augue lectus, rhoncus scelerisque consectetur at, scelerisque sit amet lacus. Sed eleifend nunc non massa fringilla porttitor. Sed ultricies porttitor tellus, quis tincidunt nisl porta vitae. Integer luctus arcu tempor, gravida sapien nec, porta dolor. Proin fermentum dui vitae lacinia lacinia. Praesent imperdiet malesuada eros, fermentum dictum nibh ullamcorper sit amet. In sagittis ac tortor a bibendum. Ut id imperdiet lacus. Sed eu sagittis urna. Mauris justo turpis, consectetur vel enim sodales, semper tempor mi. Sed in elementum felis. In hac habitasse platea dictumst. Curabitur interdum convallis odio, a vestibulum nulla.
 
-                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras at urna id ex blandit aliquet. Duis et tincidunt tellus, in pharetra mi. Sed ac lobortis dui, eu ultricies libero. Nunc fermentum vel justo ac imperdiet. Sed posuere commodo ipsum at sodales. Nulla gravida nunc vel elementum vestibulum. Morbi varius arcu sit amet justo finibus vestibulum. Curabitur lectus justo, imperdiet in orci ac, porta hendrerit diam. Sed eget semper dui. Morbi malesuada arcu lorem, in venenatis magna sodales sed. Praesent sagittis facilisis lacus, ac molestie ante porttitor vel. Fusce accumsan orci eros, at sodales quam sagittis ac. Nullam nisi est, volutpat vitae diam eu, rhoncus tincidunt lacus. Proin in dolor velit. Sed efficitur auctor velit in vestibulum.
-
-                            Praesent vitae lacus eu tortor rutrum mattis ac eget nibh. Phasellus ut nunc sodales, condimentum velit nec, lobortis risus. Etiam vel egestas magna, vel congue elit. Duis felis purus, porta venenatis libero id, ultrices pulvinar nulla. Morbi placerat nibh at lorem hendrerit tempor. Vivamus leo velit, varius ut felis et, lobortis varius purus. Aenean gravida odio lorem, vitae aliquet dui pharetra sit amet. Duis maximus non lorem lobortis dignissim. Praesent nisi nibh, hendrerit in maximus eu, lacinia nec mi. Phasellus diam nisi, aliquet vitae lacus ut, iaculis posuere elit. Donec eu bibendum eros. Cras lorem metus, scelerisque sit amet augue eu, aliquam laoreet ligula. Phasellus dignissim, sapien sit amet pharetra viverra, odio tellus porta enim, eu imperdiet lectus justo porttitor est.
-
-                            Morbi tempor sem quis imperdiet venenatis. Suspendisse potenti. Nullam condimentum, libero id faucibus laoreet, mi augue congue libero, et suscipit purus ex eu nulla. Sed in blandit arcu. Maecenas malesuada rhoncus eros, vel faucibus dolor mollis eget. Etiam ullamcorper luctus malesuada. Donec dui eros, bibendum vel semper ac, elementum eget sem. Mauris quis tristique arcu. Phasellus dapibus purus id nibh pharetra, ut hendrerit urna rhoncus. Morbi venenatis lectus pretium mollis rhoncus.
-
-                            Nullam sit amet leo mauris. Etiam feugiat sagittis nibh, at aliquet libero luctus id. Sed gravida augue mollis, blandit ex nec, elementum ipsum. Quisque feugiat lorem vitae quam placerat, et aliquam nisi posuere. Praesent egestas aliquet odio, sit amet feugiat est molestie non. Nullam pulvinar neque sed tortor efficitur commodo. Nulla facilisi.</p>
+                <!-- body -->
+                <div class="modal-body">
 
 
-                    </div>
-                    <!-- body -->
+                    <span style=" cursor: pointer; float:right;" data-dismiss="modal"><i style="color: white;" class="fas fa-times"></i> Stäng</span>
+                    <br>
+                    <br>
+                    <h1>Lorem ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor vitae justo quis eleifend. Ut augue lectus, rhoncus scelerisque consectetur at, scelerisque sit amet lacus. Sed eleifend nunc non massa fringilla porttitor. Sed ultricies porttitor tellus, quis tincidunt nisl porta vitae. Integer luctus arcu tempor, gravida sapien nec, porta dolor. Proin fermentum dui vitae lacinia lacinia. Praesent imperdiet malesuada eros, fermentum dictum nibh ullamcorper sit amet. In sagittis ac tortor a bibendum. Ut id imperdiet lacus. Sed eu sagittis urna. Mauris justo turpis, consectetur vel enim sodales, semper tempor mi. Sed in elementum felis. In hac habitasse platea dictumst. Curabitur interdum convallis odio, a vestibulum nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras at urna id ex blandit aliquet. Duis et tincidunt tellus, in pharetra mi. Sed ac lobortis dui, eu ultricies libero. Nunc fermentum vel justo ac imperdiet. Sed posuere commodo ipsum at sodales. Nulla gravida nunc vel elementum vestibulum. Morbi varius arcu sit amet justo finibus vestibulum. Curabitur lectus justo, imperdiet in orci ac, porta hendrerit diam. Sed eget semper dui. Morbi malesuada arcu lorem, in venenatis magna sodales sed. Praesent sagittis facilisis lacus, ac molestie ante porttitor vel. Fusce accumsan orci eros, at sodales quam sagittis ac. Nullam nisi est, volutpat vitae diam eu, rhoncus tincidunt lacus. Proin in dolor velit. Sed efficitur auctor velit in vestibulum. Praesent vitae lacus eu tortor rutrum mattis ac eget nibh. Phasellus ut nunc sodales, condimentum velit nec, lobortis risus. Etiam vel egestas magna, vel congue elit. Duis felis purus, porta venenatis libero id, ultrices pulvinar nulla. Morbi placerat nibh at lorem hendrerit tempor. Vivamus leo velit, varius ut felis et, lobortis varius purus. Aenean gravida odio lorem, vitae aliquet dui pharetra sit amet. Duis maximus non lorem lobortis dignissim. Praesent nisi nibh, hendrerit in maximus eu, lacinia nec mi. Phasellus diam nisi, aliquet vitae lacus ut, iaculis posuere elit. Donec eu bibendum eros. Cras lorem metus, scelerisque sit amet augue eu, aliquam laoreet ligula. Phasellus dignissim, sapien sit amet pharetra viverra, odio tellus porta enim, eu imperdiet lectus justo porttitor est. Morbi tempor sem quis imperdiet venenatis. Suspendisse potenti. Nullam condimentum, libero id faucibus laoreet, mi augue congue libero, et suscipit purus ex eu nulla. Sed in blandit arcu. Maecenas malesuada rhoncus eros, vel faucibus dolor mollis eget. Etiam ullamcorper luctus malesuada. Donec dui eros, bibendum vel semper ac, elementum eget sem. Mauris quis tristique arcu. Phasellus dapibus purus id nibh pharetra, ut hendrerit urna rhoncus. Morbi venenatis lectus pretium mollis rhoncus. Nullam sit amet leo mauris. Etiam feugiat sagittis nibh, at aliquet libero luctus id. Sed gravida augue mollis, blandit ex nec, elementum ipsum. Quisque feugiat lorem vitae quam placerat, et aliquam nisi posuere. Praesent egestas aliquet odio, sit amet feugiat est molestie non. Nullam pulvinar neque sed tortor efficitur commodo. Nulla facilisi.</p>
+
+
                 </div>
+                <!-- body -->
             </div>
         </div>
-   
-        <!-- modal RISKKAPITAL -->
-        <div id="fsModal6" class="modal animated fadeIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    </div>
 
-            <!-- dialog -->
-            <div class="modal-dialog">
+    <!-- modal RISKKAPITAL -->
+    <div id="fsModal6" class="modal animated fadeIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
-                <!-- content -->
-                <div class="modal-content">
+        <!-- dialog -->
+        <div class="modal-dialog">
 
-
-
-                    <!-- body -->
-                    <div class="modal-body">
+            <!-- content -->
+            <div class="modal-content">
 
 
-                        <span  data-dismiss="modal"><i style="color: black; cursor: pointer;" class="fas fa-times"></i> Stäng</span>
 
-                        <h1>Lorem ipsum</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor vitae justo quis eleifend. Ut augue lectus, rhoncus scelerisque consectetur at, scelerisque sit amet lacus. Sed eleifend nunc non massa fringilla porttitor. Sed ultricies porttitor tellus, quis tincidunt nisl porta vitae. Integer luctus arcu tempor, gravida sapien nec, porta dolor. Proin fermentum dui vitae lacinia lacinia. Praesent imperdiet malesuada eros, fermentum dictum nibh ullamcorper sit amet. In sagittis ac tortor a bibendum. Ut id imperdiet lacus. Sed eu sagittis urna. Mauris justo turpis, consectetur vel enim sodales, semper tempor mi. Sed in elementum felis. In hac habitasse platea dictumst. Curabitur interdum convallis odio, a vestibulum nulla.
-
-                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras at urna id ex blandit aliquet. Duis et tincidunt tellus, in pharetra mi. Sed ac lobortis dui, eu ultricies libero. Nunc fermentum vel justo ac imperdiet. Sed posuere commodo ipsum at sodales. Nulla gravida nunc vel elementum vestibulum. Morbi varius arcu sit amet justo finibus vestibulum. Curabitur lectus justo, imperdiet in orci ac, porta hendrerit diam. Sed eget semper dui. Morbi malesuada arcu lorem, in venenatis magna sodales sed. Praesent sagittis facilisis lacus, ac molestie ante porttitor vel. Fusce accumsan orci eros, at sodales quam sagittis ac. Nullam nisi est, volutpat vitae diam eu, rhoncus tincidunt lacus. Proin in dolor velit. Sed efficitur auctor velit in vestibulum.
-
-                            Praesent vitae lacus eu tortor rutrum mattis ac eget nibh. Phasellus ut nunc sodales, condimentum velit nec, lobortis risus. Etiam vel egestas magna, vel congue elit. Duis felis purus, porta venenatis libero id, ultrices pulvinar nulla. Morbi placerat nibh at lorem hendrerit tempor. Vivamus leo velit, varius ut felis et, lobortis varius purus. Aenean gravida odio lorem, vitae aliquet dui pharetra sit amet. Duis maximus non lorem lobortis dignissim. Praesent nisi nibh, hendrerit in maximus eu, lacinia nec mi. Phasellus diam nisi, aliquet vitae lacus ut, iaculis posuere elit. Donec eu bibendum eros. Cras lorem metus, scelerisque sit amet augue eu, aliquam laoreet ligula. Phasellus dignissim, sapien sit amet pharetra viverra, odio tellus porta enim, eu imperdiet lectus justo porttitor est.
-
-                            Morbi tempor sem quis imperdiet venenatis. Suspendisse potenti. Nullam condimentum, libero id faucibus laoreet, mi augue congue libero, et suscipit purus ex eu nulla. Sed in blandit arcu. Maecenas malesuada rhoncus eros, vel faucibus dolor mollis eget. Etiam ullamcorper luctus malesuada. Donec dui eros, bibendum vel semper ac, elementum eget sem. Mauris quis tristique arcu. Phasellus dapibus purus id nibh pharetra, ut hendrerit urna rhoncus. Morbi venenatis lectus pretium mollis rhoncus.
-
-                            Nullam sit amet leo mauris. Etiam feugiat sagittis nibh, at aliquet libero luctus id. Sed gravida augue mollis, blandit ex nec, elementum ipsum. Quisque feugiat lorem vitae quam placerat, et aliquam nisi posuere. Praesent egestas aliquet odio, sit amet feugiat est molestie non. Nullam pulvinar neque sed tortor efficitur commodo. Nulla facilisi.</p>
+                <!-- body -->
+                <div class="modal-body">
 
 
-                    </div>
-                    <!-- body -->
+                    <span style=" cursor: pointer; float:right;" data-dismiss="modal"><i style="color: white;" class="fas fa-times"></i> Stäng</span>
+                    <br>
+                    <br>
+                    <h1>Lorem ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor vitae justo quis eleifend. Ut augue lectus, rhoncus scelerisque consectetur at, scelerisque sit amet lacus. Sed eleifend nunc non massa fringilla porttitor. Sed ultricies porttitor tellus, quis tincidunt nisl porta vitae. Integer luctus arcu tempor, gravida sapien nec, porta dolor. Proin fermentum dui vitae lacinia lacinia. Praesent imperdiet malesuada eros, fermentum dictum nibh ullamcorper sit amet. In sagittis ac tortor a bibendum. Ut id imperdiet lacus. Sed eu sagittis urna. Mauris justo turpis, consectetur vel enim sodales, semper tempor mi. Sed in elementum felis. In hac habitasse platea dictumst. Curabitur interdum convallis odio, a vestibulum nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras at urna id ex blandit aliquet. Duis et tincidunt tellus, in pharetra mi. Sed ac lobortis dui, eu ultricies libero. Nunc fermentum vel justo ac imperdiet. Sed posuere commodo ipsum at sodales. Nulla gravida nunc vel elementum vestibulum. Morbi varius arcu sit amet justo finibus vestibulum. Curabitur lectus justo, imperdiet in orci ac, porta hendrerit diam. Sed eget semper dui. Morbi malesuada arcu lorem, in venenatis magna sodales sed. Praesent sagittis facilisis lacus, ac molestie ante porttitor vel. Fusce accumsan orci eros, at sodales quam sagittis ac. Nullam nisi est, volutpat vitae diam eu, rhoncus tincidunt lacus. Proin in dolor velit. Sed efficitur auctor velit in vestibulum. Praesent vitae lacus eu tortor rutrum mattis ac eget nibh. Phasellus ut nunc sodales, condimentum velit nec, lobortis risus. Etiam vel egestas magna, vel congue elit. Duis felis purus, porta venenatis libero id, ultrices pulvinar nulla. Morbi placerat nibh at lorem hendrerit tempor. Vivamus leo velit, varius ut felis et, lobortis varius purus. Aenean gravida odio lorem, vitae aliquet dui pharetra sit amet. Duis maximus non lorem lobortis dignissim. Praesent nisi nibh, hendrerit in maximus eu, lacinia nec mi. Phasellus diam nisi, aliquet vitae lacus ut, iaculis posuere elit. Donec eu bibendum eros. Cras lorem metus, scelerisque sit amet augue eu, aliquam laoreet ligula. Phasellus dignissim, sapien sit amet pharetra viverra, odio tellus porta enim, eu imperdiet lectus justo porttitor est. Morbi tempor sem quis imperdiet venenatis. Suspendisse potenti. Nullam condimentum, libero id faucibus laoreet, mi augue congue libero, et suscipit purus ex eu nulla. Sed in blandit arcu. Maecenas malesuada rhoncus eros, vel faucibus dolor mollis eget. Etiam ullamcorper luctus malesuada. Donec dui eros, bibendum vel semper ac, elementum eget sem. Mauris quis tristique arcu. Phasellus dapibus purus id nibh pharetra, ut hendrerit urna rhoncus. Morbi venenatis lectus pretium mollis rhoncus. Nullam sit amet leo mauris. Etiam feugiat sagittis nibh, at aliquet libero luctus id. Sed gravida augue mollis, blandit ex nec, elementum ipsum. Quisque feugiat lorem vitae quam placerat, et aliquam nisi posuere. Praesent egestas aliquet odio, sit amet feugiat est molestie non. Nullam pulvinar neque sed tortor efficitur commodo. Nulla facilisi.</p>
+
+
                 </div>
+                <!-- body -->
             </div>
         </div>
-   
-        <!-- modal TEST -->
-        <div id="fsModal7" class="modal animated fadeIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    </div>
 
-            <!-- dialog -->
-            <div class="modal-dialog">
+    <!-- modal TEST -->
+    <div id="fsModal7" class="modal animated fadeIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
-                <!-- content -->
-                <div class="modal-content">
+        <!-- dialog -->
+        <div class="modal-dialog">
 
-
-
-                    <!-- body -->
-                    <div class="modal-body">
-
-
-                        <span  data-dismiss="modal"><i style="color: black;" class="fas fa-times"></i> Stäng</span>
-
-
-                        <h1>Lorem ipsum</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor vitae justo quis eleifend. Ut augue lectus, rhoncus scelerisque consectetur at, scelerisque sit amet lacus. Sed eleifend nunc non massa fringilla porttitor. Sed ultricies porttitor tellus, quis tincidunt nisl porta vitae. Integer luctus arcu tempor, gravida sapien nec, porta dolor. Proin fermentum dui vitae lacinia lacinia. Praesent imperdiet malesuada eros, fermentum dictum nibh ullamcorper sit amet. In sagittis ac tortor a bibendum. Ut id imperdiet lacus. Sed eu sagittis urna. Mauris justo turpis, consectetur vel enim sodales, semper tempor mi. Sed in elementum felis. In hac habitasse platea dictumst. Curabitur interdum convallis odio, a vestibulum nulla.
-
-                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras at urna id ex blandit aliquet. Duis et tincidunt tellus, in pharetra mi. Sed ac lobortis dui, eu ultricies libero. Nunc fermentum vel justo ac imperdiet. Sed posuere commodo ipsum at sodales. Nulla gravida nunc vel elementum vestibulum. Morbi varius arcu sit amet justo finibus vestibulum. Curabitur lectus justo, imperdiet in orci ac, porta hendrerit diam. Sed eget semper dui. Morbi malesuada arcu lorem, in venenatis magna sodales sed. Praesent sagittis facilisis lacus, ac molestie ante porttitor vel. Fusce accumsan orci eros, at sodales quam sagittis ac. Nullam nisi est, volutpat vitae diam eu, rhoncus tincidunt lacus. Proin in dolor velit. Sed efficitur auctor velit in vestibulum.
-
-                            Praesent vitae lacus eu tortor rutrum mattis ac eget nibh. Phasellus ut nunc sodales, condimentum velit nec, lobortis risus. Etiam vel egestas magna, vel congue elit. Duis felis purus, porta venenatis libero id, ultrices pulvinar nulla. Morbi placerat nibh at lorem hendrerit tempor. Vivamus leo velit, varius ut felis et, lobortis varius purus. Aenean gravida odio lorem, vitae aliquet dui pharetra sit amet. Duis maximus non lorem lobortis dignissim. Praesent nisi nibh, hendrerit in maximus eu, lacinia nec mi. Phasellus diam nisi, aliquet vitae lacus ut, iaculis posuere elit. Donec eu bibendum eros. Cras lorem metus, scelerisque sit amet augue eu, aliquam laoreet ligula. Phasellus dignissim, sapien sit amet pharetra viverra, odio tellus porta enim, eu imperdiet lectus justo porttitor est.
-
-                            Morbi tempor sem quis imperdiet venenatis. Suspendisse potenti. Nullam condimentum, libero id faucibus laoreet, mi augue congue libero, et suscipit purus ex eu nulla. Sed in blandit arcu. Maecenas malesuada rhoncus eros, vel faucibus dolor mollis eget. Etiam ullamcorper luctus malesuada. Donec dui eros, bibendum vel semper ac, elementum eget sem. Mauris quis tristique arcu. Phasellus dapibus purus id nibh pharetra, ut hendrerit urna rhoncus. Morbi venenatis lectus pretium mollis rhoncus.
-
-                            Nullam sit amet leo mauris. Etiam feugiat sagittis nibh, at aliquet libero luctus id. Sed gravida augue mollis, blandit ex nec, elementum ipsum. Quisque feugiat lorem vitae quam placerat, et aliquam nisi posuere. Praesent egestas aliquet odio, sit amet feugiat est molestie non. Nullam pulvinar neque sed tortor efficitur commodo. Nulla facilisi.</p>
+            <!-- content -->
+            <div class="modal-content">
 
 
 
-                    </div>
-                    <!-- body -->
+                <!-- body -->
+                <div class="modal-body">
+
+
+                    <span style="cursor: pointer; float:right;" data-dismiss="modal"><i style="color: white;" class="fas fa-times"></i> Stäng</span>
+                    <br>
+                    <br>
+
+                    <h1>Lorem ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor vitae justo quis eleifend. Ut augue lectus, rhoncus scelerisque consectetur at, scelerisque sit amet lacus. Sed eleifend nunc non massa fringilla porttitor. Sed ultricies porttitor tellus, quis tincidunt nisl porta vitae. Integer luctus arcu tempor, gravida sapien nec, porta dolor. Proin fermentum dui vitae lacinia lacinia. Praesent imperdiet malesuada eros, fermentum dictum nibh ullamcorper sit amet. In sagittis ac tortor a bibendum. Ut id imperdiet lacus. Sed eu sagittis urna. Mauris justo turpis, consectetur vel enim sodales, semper tempor mi. Sed in elementum felis. In hac habitasse platea dictumst. Curabitur interdum convallis odio, a vestibulum nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras at urna id ex blandit aliquet. Duis et tincidunt tellus, in pharetra mi. Sed ac lobortis dui, eu ultricies libero. Nunc fermentum vel justo ac imperdiet. Sed posuere commodo ipsum at sodales. Nulla gravida nunc vel elementum vestibulum. Morbi varius arcu sit amet justo finibus vestibulum. Curabitur lectus justo, imperdiet in orci ac, porta hendrerit diam. Sed eget semper dui. Morbi malesuada arcu lorem, in venenatis magna sodales sed. Praesent sagittis facilisis lacus, ac molestie ante porttitor vel. Fusce accumsan orci eros, at sodales quam sagittis ac. Nullam nisi est, volutpat vitae diam eu, rhoncus tincidunt lacus. Proin in dolor velit. Sed efficitur auctor velit in vestibulum. Praesent vitae lacus eu tortor rutrum mattis ac eget nibh. Phasellus ut nunc sodales, condimentum velit nec, lobortis risus. Etiam vel egestas magna, vel congue elit. Duis felis purus, porta venenatis libero id, ultrices pulvinar nulla. Morbi placerat nibh at lorem hendrerit tempor. Vivamus leo velit, varius ut felis et, lobortis varius purus. Aenean gravida odio lorem, vitae aliquet dui pharetra sit amet. Duis maximus non lorem lobortis dignissim. Praesent nisi nibh, hendrerit in maximus eu, lacinia nec mi. Phasellus diam nisi, aliquet vitae lacus ut, iaculis posuere elit. Donec eu bibendum eros. Cras lorem metus, scelerisque sit amet augue eu, aliquam laoreet ligula. Phasellus dignissim, sapien sit amet pharetra viverra, odio tellus porta enim, eu imperdiet lectus justo porttitor est. Morbi tempor sem quis imperdiet venenatis. Suspendisse potenti. Nullam condimentum, libero id faucibus laoreet, mi augue congue libero, et suscipit purus ex eu nulla. Sed in blandit arcu. Maecenas malesuada rhoncus eros, vel faucibus dolor mollis eget. Etiam ullamcorper luctus malesuada. Donec dui eros, bibendum vel semper ac, elementum eget sem. Mauris quis tristique arcu. Phasellus dapibus purus id nibh pharetra, ut hendrerit urna rhoncus. Morbi venenatis lectus pretium mollis rhoncus. Nullam sit amet leo mauris. Etiam feugiat sagittis nibh, at aliquet libero luctus id. Sed gravida augue mollis, blandit ex nec, elementum ipsum. Quisque feugiat lorem vitae quam placerat, et aliquam nisi posuere. Praesent egestas aliquet odio, sit amet feugiat est molestie non. Nullam pulvinar neque sed tortor efficitur commodo. Nulla facilisi.</p>
+
+
+
                 </div>
+                <!-- body -->
             </div>
         </div>
-        <div class="footer">
-            <center><p class="text-muted">© 2018 Almi</p></center>
-        </div>
-    </body>
-    <!-- jQuerry 3.2.1 min.js-->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <!-- popper.js 1.11.0 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <!-- Bootstrap CDN 4.0.0. Beta-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <!-- Font Awesome v5.0.1 -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
-    <script src="js/polyfills.js"></script>
-    <script src="js/menu.js"></script>
-    <!-- Mitt egna skript -->
-    <script src="js/company.js"></script>
+    </div>
+    <div class="footer">
+        <center>
+            <p class="text-muted">© 2018 Almi</p>
+        </center>
+    </div>
+</body>
+<!-- jQuerry 3.2.1 min.js-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- popper.js 1.11.0 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<!-- Bootstrap CDN 4.0.0. Beta-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- Font Awesome v5.0.1 -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+<script src="js/polyfills.js"></script>
+<script src="js/menu.js"></script>
+<!-- Mitt egna skript -->
+<script src="js/company.js"></script>
 
 
 </html>
