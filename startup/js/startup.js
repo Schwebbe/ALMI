@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     $('#navbarSideButton').on('click', function () {
         $('#navbarSide').addClass('reveal');
         $('.navbar-side-item').addClass('animated fadeInUp');
@@ -42,7 +41,7 @@ $(document).ready(function() {
 
             var id = document.getElementById(this.id).id; // Get current button's ID.
             $("#text" + id).show(); // Show current text box.
-            $("#text" + id).addClass("animated bounceInRight"); // Animate text box to slide in.
+            $("#text" + id).addClass("animated bounceInUp"); // Animate text box to slide in.
 
             var currentButton = document.getElementById(this.id); // Get current button's element.
 

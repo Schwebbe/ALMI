@@ -58,6 +58,9 @@ h2 {
     width: 230px;
 }
 
+.startbuttons:hover {
+    background-color: #095973;
+}
 
 .navbar-menu-toggler {
     display: inline-block;

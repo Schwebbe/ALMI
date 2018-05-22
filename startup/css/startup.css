@@ -57,17 +57,17 @@ html {
 }
 
 .videoButton{
-  border-radius: 5px;
-  margin-top: 8px;
-  margin-right: 8px;
-  border: 0px;
-  background-color: #fff;
-  float: right;
-  outline: none;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border: 0px;
+    background-color: #1388ae;
+    float: right;
+    outline: none;
+    color: #fff;
 }
 .videoButton:hover{
-  background-color: #1388ae;
-  color: #fff;
+    background-color: #095973;
 }
 
 
@@ -96,6 +96,10 @@ html {
     color: #fff;
     cursor: pointer;
     outline: none;
+}
+
+.level-btn:hover {
+    background-color: #095973;
 }
 
 .text-box {
