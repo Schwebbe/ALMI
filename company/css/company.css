@@ -23,7 +23,9 @@ body {
     width: 100%;
     font-family:"Quicksand-Bold";
 }
-
+button:focus {
+    outline: none;
+}
 
 .test {
     position:fixed;
